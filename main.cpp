@@ -10,9 +10,9 @@ int main()
     {
         b[i] = i * 2;
     }
-    for (int i = 0; i; i++)
+    for (int i = 0; i; i++) /* nem jo a ciklus, i feltetel! */
     {
-        std::cout << "Ertek:" /* nincs pontosvesszo */ 
+        std::cout << "Ertek:" /* nincs pontosvesszo */ /* ill. igy csak a stringet irjuk ki egymas utan sokszor, a tenyleges erteket nem */ 
     }    
     std::cout << "Atlag szamitasa: " << std::endl;
     int atlag;
@@ -20,7 +20,7 @@ int main()
     {
         atlag += b[i] /* nincs pontosvesszo */
     }
-    atlag /= N_ELEMENTS;
+    atlag /= N_ELEMENTS; /* osztando ill oszto felcserelendo */ 
     std::cout << "Atlag: " << atlag << std::endl;
     return 0;
 }
